@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -39,10 +40,25 @@
   
 }
 
+.footer {
+  display: flex;             
+  justify-content: flex-start; 
+  padding: 90px;           
+  background-color: #f1f1f1; 
+  width: 100%;             
+  box-sizing: border-box;  
+}
+
+.all-rights {
+  font-weight: bold;
+  font-size: small;
+  text-align: start;
+}
+
 .responsive-image {
-  width: 95%; /* Image takes full width of the container */
+  width: 95%; 
   max-width: 1200px;
-  height: auto; /* Maintain aspect ratio */
+  height: auto; 
 }
 
 .subheader-title {  
@@ -51,19 +67,19 @@
 }
 
 .header-button {
-  background-color: transparent; /* Button color */
-  color: black;              /* Text color */
-  padding: 10px 10px;        /* Padding inside the button */
-  border: none;              /* Remove default border */
-  border-radius: 10px;        /* Rounded corners */
-  cursor: pointer;           /* Change cursor to pointer */
-  font-size: 16px;           /* Adjust text size */
+  background-color: transparent; 
+  color: black;              
+  padding: 10px 10px;        
+  border: none;              
+  border-radius: 10px;        
+  cursor: pointer;           
+  font-size: 16px;           
   font-weight: bold;
   margin-right: 6px;
 }
 
 .header-button:hover {
-  background-color: #f1f5f8; /* Darker color on hover */
+  background-color: #f1f5f8; 
 }
 
 .App-link {
