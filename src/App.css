@@ -11,8 +11,15 @@
   display: flex;
   font-size: calc(2vmin);
   color: black;
-  margin-top: 10px;
+  padding-top: 10px;
   padding-left: 90px;
+  align-items: center;
+}
+
+.header-logo {
+  width: auto; 
+  height: 40px; 
+  margin-right: 10px;
 }
 
 .highlight {
@@ -28,6 +35,14 @@
   justify-content: center;
   font-size: calc(6vmin);
   color: black;
+  width: 100%;
+  
+}
+
+.responsive-image {
+  width: 95%; /* Image takes full width of the container */
+  max-width: 1200px;
+  height: auto; /* Maintain aspect ratio */
 }
 
 .subheader-title {  
