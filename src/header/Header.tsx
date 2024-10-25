@@ -10,21 +10,24 @@ function Header() {
   };
 
   return (
-      <header className='flex w-screen flex-row pt-2'>
-        <img className='header-logo ml-4' src="/logo.png" alt="Writeopia logo" />
+      <header className='flex w-screen flex-row pt-6 pb-6'>
+        <img className='header-logo z-50 ml-6' src="/logo.png" alt="Writeopia logo" />
         <nav className="ml-auto pr-10 hidden md:flex items-center">
           <button className="header-button">Home</button>
           <button className="header-button">Product</button>
           <button className="header-button">What's coming</button>
         </nav>
-        <div className="mr-10 z-50 ml-auto mr-2 md:hidden">
+        <div className={`z-50 ml-auto ${isOpen ? 'visible' : 'md:hidden'}  mr-6`}>
           <Hamburger toggled={isOpen} toggle={toggleMenu} size={20} />
         </div>                      
-        <div className={`fixed inset-0 bg-white z-40 flex flex-col items-center justify-start pt-6 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-          <nav className="flex flex-col items-center gap-8 w-screen items-center">
-            <button className="header-button">Home</button>
-            <button className="header-button">Product</button>
-            <button className="header-button">What's coming</button>
+        <div className={`fixed inset-0 bg-white z-40 pt-6 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+
+          <nav className="flex flex-col items-start gap-6 w-screen pt-28">
+            <button className="text-4xl w-screen text-start font-bold p-6">Home</button>
+            <div className="h-px bg-gray-300 w-full"/>
+            <button className="text-4xl w-screen text-start font-bold p-6">Product</button>
+            <div className="h-px bg-gray-300 w-full"/>
+            <button className="text-4xl w-screen text-start font-bold p-6">What's coming</button>
           </nav>
         </div>
       </header>

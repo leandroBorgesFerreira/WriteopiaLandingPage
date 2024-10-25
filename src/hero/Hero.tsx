@@ -4,7 +4,7 @@ import '../App.css';
 function Hero() {
   return (
       <div className="subheader">    
-        <p className='text-3xl font-bold tracking-tighter sm:text-7xl mb-8 mt-10'>Free documentation. <span className="highlight">For the brave and true.</span> </p>        
+        <p className='text-7xl font-bold tracking-tighter sm:text-7xl p-8'>Free documentation. <span className="highlight">For the brave and true.</span> </p>        
         <p className="max-w-[440px] text-gray-500 font-semibold text-xl">Write your ideas. Keep you docs safe and prive. Decide where you data goes.</p>
 
         <div className="space-x-4 mb-20">
