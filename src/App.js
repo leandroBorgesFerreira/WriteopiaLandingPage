@@ -1,13 +1,17 @@
 import './App.css';
-import SubHeader from './subHeader/SubHeader.tsx'; 
+import Hero from './hero/Hero.tsx'; 
 import Header from './header/Header.tsx';
 import Footer from './footer/Footer.tsx';
+import Compatibility from './platforms/Compatibility.tsx';
+import Newsletter from './contact/Newsletter.tsx';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <SubHeader />
+      <Hero />
+      <Compatibility />
+      <Newsletter />
       <Footer />
     </div>
   );

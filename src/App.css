@@ -12,15 +12,6 @@
   pointer-events: none;
 }
 
-.header {
-  display: flex;
-  font-size: calc(2vmin);
-  color: black;
-  padding-top: 10px;
-  padding-left: 90px;
-  align-items: center;
-}
-
 .global-menu-icon {
   margin-left: auto;
   margin-right: 30px;
@@ -29,7 +20,6 @@
 .header-logo {
   width: auto; 
   height: 40px; 
-  margin-right: 10px;
 }
 
 .highlight {
@@ -89,8 +79,41 @@
   margin-right: 6px;
 }
 
+.default-button {
+  background-color: black; 
+  color: white;              
+  padding: 10px 10px;        
+  border: none;              
+  border-radius: 10px;        
+  cursor: pointer;           
+  font-size: 16px;           
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.variant-button {
+  background-color: white; 
+  color: black;              
+  padding: 10px 10px;        
+  border: solid black;  
+  border-width: 2px; 
+  border-radius: 10px;        
+  cursor: pointer;           
+  font-size: 16px;           
+  font-weight: bold;
+  margin-right: 6px;
+}
+
 .header-button:hover {
   background-color: #f1f5f8; 
+}
+
+.default-button:hover {
+  background-color: #444444; 
+}
+
+.variant-button:hover {
+  background-color: #EEEEEE; 
 }
 
 .App-link {
