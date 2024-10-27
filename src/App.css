@@ -23,7 +23,7 @@
 }
 
 .highlight {
-  color: #a400c5; 
+  color: #E15CBF; 
   margin-left: 10px;  
   margin-right: 10px; 
 }
@@ -83,7 +83,7 @@
   background-color: black; 
   color: white;              
   padding: 10px 10px;        
-  border: none;              
+  border: solid black;          
   border-radius: 10px;        
   cursor: pointer;           
   font-size: 16px;           

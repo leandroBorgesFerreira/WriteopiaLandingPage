@@ -1,4 +1,6 @@
 import React from "react"
+import { Smartphone, Apple, Monitor , AppWindow, Mouse, Globe, Bot, Laptop} from 'lucide-react';
+
 
 export default function Component() {
   const platforms = [
@@ -13,21 +15,23 @@ export default function Component() {
   const renderPlatformIcon = (name: string) => {
     switch (name) {
       case 'Windows':
-        return <path d="M3 12h18M12 3v18M4 9.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3.5" />
+        return <AppWindow />
       case 'Linux':
-        return <path d="M16 16l-4-4-4 4M12 12v9" />
+        return <Laptop />
       case 'Mac':
-        return <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+        return <Monitor />
       case 'iOS':
-        return <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+        return <Smartphone />
       case 'Android':
-        return <path d="M5 16V9h14V2H5l14 14h-7m-7 0l7 7v-7m-7 0h7" />
+        return <Bot />
       case 'Web':
-        return <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6.3 5.3l-2.8 2.8a1 1 0 0 1-1.4 0L12 8l-2.1 2.1a1 1 0 0 1-1.4 0L5.7 7.3a8 8 0 0 1 12.6 0z" />
+        return <Globe />
+				
       default:
         return null
     }
   }
+
 
   const renderPlatformCard = (platform: { name: string; color: string; description: string }) => (
     <div key={platform.name} className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
@@ -38,7 +42,7 @@ export default function Component() {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className={`h-12 w-12 mb-4 text-${platform.color}-500`}
+        className={`h-12 w-12 mb-4`}
       >
         {renderPlatformIcon(platform.name)}
       </svg>

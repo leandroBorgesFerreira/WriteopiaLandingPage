@@ -21,7 +21,7 @@ export default function NewsletterSection() {
         </p>  
         <div className="space-y-2 space-x-2">
           <input 
-            className="max-w-lg flex-1 p-2 rounded-xl border-2" 
+            className="max-w-lg flex-1 p-3 rounded-xl border-2" 
             placeholder="Enter your email" 
             type="email" 
             value={email}
