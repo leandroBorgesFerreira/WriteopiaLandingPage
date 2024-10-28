@@ -1,18 +1,31 @@
 import './App.css';
-import Hero from './hero/Hero.tsx'; 
-import Header from './header/Header.tsx';
-import Footer from './footer/Footer.tsx';
-import Compatibility from './platforms/Compatibility.tsx';
-import Newsletter from './contact/Newsletter.tsx';
+import Root from './routes/root'
+import Product from './routes/product'
+import Coming from './routes/coming'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Root />,
+    },
+    {
+      path: "/product",
+      element: <Product />,
+    },
+    {
+      path: "/coming",
+      element: <Coming />,
+    }
+  ]
+);
 
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <Hero />
-      <Compatibility />
-      <Newsletter />
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 }

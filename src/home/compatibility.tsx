@@ -1,5 +1,5 @@
 import React from "react"
-import { Smartphone, Apple, Monitor , AppWindow, Mouse, Globe, Bot, Laptop} from 'lucide-react';
+import { Smartphone, Monitor, AppWindow, Bot, Laptop, ChevronsLeftRightEllipsis } from 'lucide-react';
 
 
 export default function Component() {
@@ -25,7 +25,7 @@ export default function Component() {
       case 'Android':
         return <Bot />
       case 'Web':
-        return <Globe />
+        return <ChevronsLeftRightEllipsis />
 				
       default:
         return null

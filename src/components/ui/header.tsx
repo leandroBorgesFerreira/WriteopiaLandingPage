@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Spiral as Hamburger } from 'hamburger-react'
-import LargeButton from "../components/ui/large-button"
-import '../App.css';
-import Divider from '../components/ui/divider';
+import LargeButton from "./large-button"
+import '../../App.css';
+import Divider from './divider';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,9 @@ export default function Header() {
       <header className='flex w-screen flex-row pt-6 pb-6'>
         <img className='header-logo z-50 ml-6' src="/logo.png" alt="Writeopia logo" />
         <nav className="ml-auto pr-10 hidden md:flex items-center">
-          <button className="header-button">Home</button>
-          <button className="header-button">Product</button>
-          <button className="header-button">What's coming</button>
+          <Link className="header-button" to="/">Home</Link>
+          <Link className="header-button" to="/product">Product</Link>
+          <Link className="header-button" to="/coming">What's coming</Link>
         </nav>
         <div className={`z-50 ml-auto ${isOpen ? 'visible' : 'md:hidden'}  mr-6`}>
           <Hamburger toggled={isOpen} toggle={toggleMenu} size={20} />
