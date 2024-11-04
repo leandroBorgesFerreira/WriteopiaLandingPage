@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import '../App.css';
+import DefaultButton from '../components/ui/default-button';
 
 export default function NewsletterSection() {
     const [email, setEmail] = useState('')
   
-    const handleSubmit = (e: React.FormEvent) => {
-      e.preventDefault()
-      // Handle newsletter signup logic here
-      console.log('Signed up with email:', email)
-      setEmail('')
-    }
+    // const handleSubmit = (e: React.FormEvent) => {
+    //   e.preventDefault()
+    //   // Handle newsletter signup logic here
+    //   console.log('Signed up with email:', email)
+    //   setEmail('')
+    // }
   
     return (
       <section className="w-screen py-12 md:py-24 lg:py-32 flex flex-col space-y-4 text-center">
@@ -29,7 +30,7 @@ export default function NewsletterSection() {
             required
           />
           
-          <button className="default-button rounded-xl" type="submit">Subscribe</button>
+          <DefaultButton type="submit">Subscribe</DefaultButton>
         </div>
       </section>
     )

@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function ColorTheme() {
+  return (
+    <div className="min-h-screen flex transition-colors duration-200">
+      <main className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+        <App />
+      </main>
+    </div>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ColorTheme />
   </React.StrictMode>
 );
 

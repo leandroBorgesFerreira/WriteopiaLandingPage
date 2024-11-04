@@ -4,7 +4,6 @@ import Product from './routes/product'
 import Coming from './routes/coming'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-
 const router = createBrowserRouter(
   [
     {
