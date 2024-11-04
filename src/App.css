@@ -67,30 +67,6 @@
   padding-right: 15%;
 }
 
-.header-button {
-  background-color: transparent; 
-  color: black;              
-  padding: 10px 10px;        
-  border: none;              
-  border-radius: 10px;        
-  cursor: pointer;           
-  font-size: 16px;           
-  font-weight: bold;
-  margin-right: 6px;
-}
-
-.default-button {
-  background-color: black; 
-  color: white;              
-  padding: 10px 10px;        
-  border: solid black;          
-  border-radius: 10px;        
-  cursor: pointer;           
-  font-size: 16px;           
-  font-weight: bold;
-  margin-right: 6px;
-}
-
 .variant-button {
   background-color: white; 
   color: black;              
@@ -104,13 +80,9 @@
   margin-right: 6px;
 }
 
-.header-button:hover {
-  background-color: #f1f5f8; 
-}
 
-.default-button:hover {
-  background-color: #444444; 
-}
+
+
 
 .variant-button:hover {
   background-color: #EEEEEE; 

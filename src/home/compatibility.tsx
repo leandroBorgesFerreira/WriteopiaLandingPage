@@ -34,7 +34,7 @@ export default function Component() {
 
 
   const renderPlatformCard = (platform: { name: string; color: string; description: string }) => (
-    <div key={platform.name} className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
+    <div key={platform.name} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
       <svg
         viewBox="0 0 24 24"
         fill="none"
@@ -47,12 +47,12 @@ export default function Component() {
         {renderPlatformIcon(platform.name)}
       </svg>
       <h3 className="text-2xl font-semibold">{platform.name}</h3>
-      <p className="text-sm text-gray-500 mt-2 text-center">{platform.description}</p>
+      <p className="text-sm text-gray-500 dark:text-gray-300 mt-2 text-center">{platform.description}</p>
     </div>
   )
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-gray-100">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-900">
       <div className="container px-4 md:px-6 mx-auto max-w-6xl">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Run Anywhere, Anytime</h2>

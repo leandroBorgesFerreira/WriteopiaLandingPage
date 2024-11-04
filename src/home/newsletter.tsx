@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
+import DefaultButton from '../components/ui/default-button';
 
 export default function NewsletterSection() {
     const [email, setEmail] = useState('')
@@ -29,7 +30,7 @@ export default function NewsletterSection() {
             required
           />
           
-          <button className="default-button rounded-xl" type="submit">Subscribe</button>
+          <DefaultButton type="submit">Subscribe</DefaultButton>
         </div>
       </section>
     )

@@ -1,0 +1,22 @@
+name: Build and test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  kt_lint:
+    name: Ktlint
+    runs-on: ubuntu-22.04    
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+            command: npm run e2e:ci
