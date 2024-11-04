@@ -10,8 +10,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  kt_lint:
-    name: Ktlint
+  e2e-tests:
+    name: E2E tests
     runs-on: ubuntu-22.04    
     steps:
       - name: Check out code
