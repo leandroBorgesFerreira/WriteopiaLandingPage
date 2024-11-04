@@ -17,7 +17,7 @@ export default function NewsletterSection() {
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Be the First to Know
         </h2>
-        <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+        <p className="mx-auto max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
                 Sign up for our newsletter to get early access and exclusive updates about our text editor.
         </p>  
         <div className="space-y-2 space-x-2">

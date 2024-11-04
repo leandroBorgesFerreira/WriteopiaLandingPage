@@ -5,12 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 function ColorTheme() {
+  const appStyle = {
+    backgroundColor: 'black',
+  };
+
   return (
-    <div className="min-h-screen flex transition-colors duration-200">
-      <main className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-        <App />
-      </main>
-    </div>
+    <main className="bg-white dark:bg-gray-900 min-h-screen flex transition-colors duration-200 text-gray-900 dark:text-white">
+      <App />
+    </main>
   )
 }
 

@@ -47,7 +47,7 @@ export default function Component() {
         {renderPlatformIcon(platform.name)}
       </svg>
       <h3 className="text-2xl font-semibold">{platform.name}</h3>
-      <p className="text-sm text-gray-500 dark:text-gray-300 mt-2 text-center">{platform.description}</p>
+      <p className="text-sm text-gray-500 dark:text-gray-300 pt-2 text-center">{platform.description}</p>
     </div>
   )
 
@@ -56,7 +56,7 @@ export default function Component() {
       <div className="container px-4 md:px-6 mx-auto max-w-6xl">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Run Anywhere, Anytime</h2>
-          <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Our app is designed to work seamlessly across all major platforms. Whether you're on desktop, mobile, or web, you'll have the same great experience.
           </p>
         </div>

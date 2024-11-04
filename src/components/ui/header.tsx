@@ -4,6 +4,7 @@ import LargeButton from "./large-button"
 import '../../App.css';
 import Divider from './divider';
 import HeaderLink from './header-link';
+import AnimatedDropDown from './hover-animated-dropdown';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Header() {
         <img className='header-logo z-50 ml-6' src="/logo.png" alt="Writeopia logo" />
         <nav className="ml-auto pr-10 hidden md:flex items-center">
           <HeaderLink to="/">Home</HeaderLink>
-          <HeaderLink to="/product">Product</HeaderLink>
+          <AnimatedDropDown ></AnimatedDropDown>
           <HeaderLink to="/coming">What's coming</HeaderLink>
         </nav>
         <div className={`z-50 ml-auto ${isOpen ? 'visible' : 'md:hidden'}  mr-6`}>
