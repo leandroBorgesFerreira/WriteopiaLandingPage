@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Spiral as Hamburger } from 'hamburger-react'
 import LargeButton from "./large-button"
 import '../../App.css';
