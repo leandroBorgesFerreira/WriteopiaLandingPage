@@ -5,12 +5,12 @@ import DefaultButton from '../components/ui/default-button';
 export default function NewsletterSection() {
     const [email, setEmail] = useState('')
   
-    const handleSubmit = (e: React.FormEvent) => {
-      e.preventDefault()
-      // Handle newsletter signup logic here
-      console.log('Signed up with email:', email)
-      setEmail('')
-    }
+    // const handleSubmit = (e: React.FormEvent) => {
+    //   e.preventDefault()
+    //   // Handle newsletter signup logic here
+    //   console.log('Signed up with email:', email)
+    //   setEmail('')
+    // }
   
     return (
       <section className="w-screen py-12 md:py-24 lg:py-32 flex flex-col space-y-4 text-center">
