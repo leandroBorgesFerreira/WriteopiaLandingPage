@@ -16,14 +16,12 @@ export default function Header() {
 
   const secondItems = [
     { label: 'Download', href: '#profile' },
-    { label: 'Guide', href: '#settings' },
+    { label: 'Guide', href: 'https://docs.writeopia.io/' },
   ];
 
   const thirdItems = [
     { label: 'Github', href: 'https://github.com/leandroBorgesFerreira/Writeopia' },
   ];
-
-
 
   return (
       <header className='flex w-screen flex-row pt-6 pb-6'>
