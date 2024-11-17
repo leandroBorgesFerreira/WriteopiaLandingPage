@@ -13,7 +13,7 @@ export default function NewsletterSection() {
     // }
   
     return (
-      <section className="w-screen py-12 md:py-24 lg:py-32 flex flex-col space-y-4 text-center">
+      <section className="w-screen pt-12 md:pt-24 lg:pt-32 pb-52 flex flex-col space-y-4 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Be the First to Know
         </h2>

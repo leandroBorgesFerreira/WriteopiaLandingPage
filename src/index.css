@@ -1,13 +1,13 @@
 :root {
   color-scheme: light dark;
   --color-fg: rgb(17 24 39);
-  --color-bg: white;
+  --color-bg: rgb(243 244 246);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: rgb(17 24 39);
-    --color-fg: white;
+    --color-fg: rgb(243 244 246);
   }
 }
 

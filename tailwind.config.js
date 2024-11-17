@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        '95': '95%',
+      },
+      boxShadow: {
+        'light': '0 8px 15px rgba(0, 0, 0, 0.07)',
+      },
       keyframes: {
         slideDown: {
           '0%': { transform: 'translateY(-100%)' },

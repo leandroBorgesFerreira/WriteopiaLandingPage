@@ -3,13 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import HeaderButton from './header-button';
 
-export default function AnimatedDropDown() {
+export default function AnimatedDropDown({ menuItems, label = "Options" }) {
   const [isHovered, setIsHovered] = useState(false)
-
-  const menuItems = [
-    { label: 'Download', href: '#profile' },
-    { label: 'Guide', href: '#settings' },
-  ]
 
   return (
     <div 
@@ -18,7 +13,7 @@ export default function AnimatedDropDown() {
       onMouseLeave={() => setIsHovered(false)}
     >
       <HeaderButton aria-haspopup="true" aria-expanded={isHovered}>
-        Options
+        {label}
         <motion.div
           animate={{ rotate: !isHovered ? 0 : -180 }}
           transition={{ duration: 0.150 }}
