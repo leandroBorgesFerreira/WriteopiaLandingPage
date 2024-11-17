@@ -5,6 +5,7 @@ import '../../App.css';
 import Divider from './divider';
 import HeaderLink from './header-link';
 import AnimatedDropDown from './hover-animated-dropdown';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,9 @@ export default function Header() {
 
   return (
       <header className='flex w-screen flex-row pt-6 pb-6'>
-        <img className='header-logo z-50 ml-6' src="/logo.png" alt="Writeopia logo" />
+        <Link to="/">
+          <img className='header-logo z-50 ml-6' src="/logo.png" alt="Writeopia logo" />
+        </Link>
         <nav className="ml-auto pr-10 hidden md:flex items-center">
           <HeaderLink to="/">Home</HeaderLink>
           <AnimatedDropDown menuItems={secondItems} label="Product" />
