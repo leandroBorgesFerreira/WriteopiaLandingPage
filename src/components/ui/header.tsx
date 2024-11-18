@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   const secondItems = [
-    { label: 'Download', href: '#profile' },
+    { label: 'Sample', href: 'https://sample.writeopia.io/' },
     { label: 'Guide', href: 'https://docs.writeopia.io/' },
   ];
 
