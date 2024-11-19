@@ -40,7 +40,7 @@ export default function Header() {
 
   return (
       <header className='flex w-screen flex-row pt-6 pb-6'>
-        <Link to="/">
+        <Link to="/" className="z-40">
           <img className='header-logo z-40 ml-6' src="/logo.png" alt="Writeopia logo" />
         </Link>
         <nav className="ml-auto pr-10 hidden md:flex items-center">
