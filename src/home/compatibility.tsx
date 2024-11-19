@@ -60,7 +60,7 @@ export default function Component() {
             Our app is designed to work seamlessly across all major platforms. Whether you're on desktop, mobile, or web, you'll have the same great experience.
           </p>
         </div>
-        <div className="grid gap-6 mt-12 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
           {platforms.map(renderPlatformCard)}
         </div>
       </div>

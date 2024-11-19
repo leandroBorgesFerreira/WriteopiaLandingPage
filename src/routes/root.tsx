@@ -1,6 +1,5 @@
 import Header from "../components/ui/header";
 import Hero from "../home/hero";
-import Pitch from "..//home/pitch";
 import Compatibility from "../home/compatibility";
 import Newsletter from "../home/newsletter";
 import Footer from "../components/ui/footer";
@@ -10,8 +9,7 @@ export default function Root() {
 	return (
 		<div>
 			<Header />
-			<Hero />
-			<Pitch />
+			<Hero />			
 			<Compatibility />
 			<Newsletter />
 			<Footer />

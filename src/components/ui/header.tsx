@@ -6,12 +6,27 @@ import Divider from './divider';
 import HeaderLink from './header-link';
 import AnimatedDropDown from './hover-animated-dropdown';
 import { Link } from 'react-router-dom';
+import MediumLink from './medium-button';
+import { ChevronDown } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const [isProductOpen, setIsProductOpen] = useState(false);
+
+  const toggleProductScreen = () => {
+    setIsProductOpen(!isProductOpen);
+  };
+
+  const [isComunityOpen, setIsComunityOpen] = useState(false);
+
+  const toggleComunityScreen = () => {
+    setIsComunityOpen(!isComunityOpen);
   };
 
   const secondItems = [
@@ -31,8 +46,7 @@ export default function Header() {
         <nav className="ml-auto pr-10 hidden md:flex items-center">
           <HeaderLink to="/">Home</HeaderLink>
           <AnimatedDropDown menuItems={secondItems} label="Product" />
-          <AnimatedDropDown menuItems={thirdItems} label="Comunity" />
-          <HeaderLink to="/coming">What's coming</HeaderLink>
+          <AnimatedDropDown menuItems={thirdItems} label="Comunity" />          
         </nav>
         <div className={`z-50 ml-auto ${isOpen ? 'visible' : 'md:hidden'}  mr-6`}>
           <Hamburger toggled={isOpen} toggle={toggleMenu} size={20} />
@@ -41,12 +55,46 @@ export default function Header() {
           <nav className="flex flex-col items-start gap-6 w-screen pt-28">
             <LargeButton>Home</LargeButton>
             <Divider />        
-            <LargeButton>Product</LargeButton>
-            <Divider />
-            <LargeButton>What's coming</LargeButton>
+            <LargeButton onClick={toggleProductScreen}>
+              Product
+              {
+                <motion.div
+                  animate={{ rotate: !isProductOpen ? 0 : -180 }}
+                  transition={{ duration: 0.150 }}
+                  className="ml-2 -mr-1 h-5 w-5 inline-flex items-center justify-center"
+                >
+                  <ChevronDown className="h-5 w-5" aria-hidden="true" />
+                </motion.div>
+              }               
+            </LargeButton>            
+            <div className={`flex flex-col ${isProductOpen ? 'visible' : 'hidden'}`}>              
+              {secondItems.map((item) => (
+                <MediumLink to={item.href}>{item.label}</MediumLink>
+              ))}              
+            </div>
+            <Divider />        
+            <LargeButton onClick={toggleComunityScreen}>
+              Comunity            
+                {
+                  <motion.div
+                    animate={{ rotate: !isComunityOpen ? 0 : -180 }}
+                    transition={{ duration: 0.150 }}
+                    className="ml-2 -mr-1 h-5 w-5 inline-flex items-center justify-center"
+                  >
+                    <ChevronDown className="h-5 w-5" aria-hidden="true" />
+                  </motion.div>
+                }
+              </LargeButton>
+            <div className={`flex flex-col ${isComunityOpen ? 'visible' : 'hidden'}`}>
+              {thirdItems.map((item) => (
+                <MediumLink to={item.href}>{item.label}</MediumLink>
+              ))}              
+            </div>
+            <Divider />    
           </nav>
         </div>
       </header>
   );
 }
+
 

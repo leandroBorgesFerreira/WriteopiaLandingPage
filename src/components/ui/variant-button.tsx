@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const VariantButton = ({ style = {}, onClick = () => {}, type = 'button', children = 'Button'}) => 
-	<button className='variant-button' style={style} onClick={onClick}>
+const VariantButton = ({ style = {}, to = '/', type = 'button', children = 'Button'}) => 
+	<Link className='variant-button' style={style} to={to}>
 		{children}
-	</button>;
+	</Link>;
 
 export default VariantButton;

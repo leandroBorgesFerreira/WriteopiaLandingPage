@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { ReactNode, CSSProperties } from 'react';
 
-const LargeButton = ({ style = {}, onClick = () => {}, type = 'button', children = 'Button'}) => 
-  <button className="text-4xl w-screen text-start font-bold p-6" style={style} onClick={onClick}>
+interface LargeButtonProps {
+  style?: CSSProperties;
+  onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
+  children?: ReactNode; // ReactNode covers any valid React children type
+}
+
+const LargeButton: React.FC<LargeButtonProps> = ({
+  style = {},
+  onClick = () => {},
+  type = 'button',
+  children = 'Button',
+}) => 
+  <button className="text-4xl w-screen text-start font-bold pt-2 pb-2 pl-6 pr-10 flex items-center justify-between" style={style} onClick={onClick}>
     {children}
   </button>;
   
