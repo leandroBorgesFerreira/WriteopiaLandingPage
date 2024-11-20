@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import DefaultButton from '../components/ui/default-button';
+import DefaultLink from '../components/ui/default-button';
 import VariantButton from '../components/ui/variant-button';
 
 export default function Hero() {
@@ -10,7 +10,7 @@ export default function Hero() {
         <p className="max-w-[440px] text-gray-500 dark:text-gray-400 font-semibold text-xl">Write your ideas. Keep you docs safe and private. Decide where your data goes.</p>
 
         <div className="space-x-4 mb-20">
-          <DefaultButton>Join Waitlist</DefaultButton>    
+          <DefaultLink to='https://forms.gle/QFoewRrehmkXWuMo8'>Join Waitlist</DefaultLink>    
           <VariantButton to='https://docs.writeopia.io/'>Learn More</VariantButton>
         </div>
 
