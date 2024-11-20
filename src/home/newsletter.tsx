@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import DefaultLink from '../components/ui/default-button';
+import DefaultLink from '../components/ui/default-link';
 
 export default function NewsletterSection() {    
   return (
@@ -11,7 +11,7 @@ export default function NewsletterSection() {
       <p className="mx-auto max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl">
               Sign up for our newsletter to get early access and exclusive updates about our text editor.
       </p>  
-      <div className="space-y-2 space-x-2">              
+      <div className="space-y-2 space-x-2 pt-3">              
         <DefaultLink to='https://forms.gle/QFoewRrehmkXWuMo8'>Subscribe</DefaultLink>
       </div>
     </section>
