@@ -1,12 +1,13 @@
+import PrivacyPolicy from "../privacy/privacy";
 import Footer from "../components/ui/footer";
 import Header from "../components/ui/header";
 import React from "react";
 
-export default function Product() {
+export default function Privacy() {
 	return (
 		<div>
 			<Header />
-			<p>Todo - Product</p>
+			<PrivacyPolicy />
 			<Footer />
 		</div>
 	);

@@ -1,8 +1,7 @@
 import './App.css';
 import Root from './routes/root'
-import Product from './routes/product'
-import Coming from './routes/coming'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Privacy from './routes/privacy';
 
 const router = createBrowserRouter(
   [
@@ -11,13 +10,9 @@ const router = createBrowserRouter(
       element: <Root />,
     },
     {
-      path: "/product",
-      element: <Product />,
-    },
-    {
-      path: "/coming",
-      element: <Coming />,
-    }
+      path: "/privacy",
+      element: <Privacy />,
+    }    
   ]
 );
 
