@@ -30,7 +30,8 @@ export default function Header() {
   };
 
   const secondItems = [
-    { label: 'Download App - Mac', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha2/Writeopia-1.0.0.dmg' },
+    { label: 'Download App - Mac', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha4/Writeopia-alpha4.dmg' },
+    { label: 'Download App - Mac (Intel)', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha4/Writeopia-alpha4-intel.dmg' },
     { label: 'Sample', href: 'https://sample.writeopia.io/' },
     { label: 'Guide', href: 'https://docs.writeopia.io/' },
   ];
