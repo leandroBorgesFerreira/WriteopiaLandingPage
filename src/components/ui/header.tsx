@@ -50,8 +50,7 @@ export default function Header() {
         <nav className="ml-auto pr-10 hidden md:flex items-center">
           <HeaderLink to="/">Home</HeaderLink>
           <AnimatedDropDown menuItems={secondItems} label="Product" />
-          <AnimatedDropDown menuItems={thirdItems} label="Comunity" />          
-          <HeaderLink to="https://docs.writeopia.io">Documentation</HeaderLink>
+          <AnimatedDropDown menuItems={thirdItems} label="Comunity" />                
         </nav>
         <div className={`z-40 ml-auto ${isOpen ? 'visible' : 'md:hidden'}  mr-6`}>
           <Hamburger toggled={isOpen} toggle={toggleMenu} size={20} />
