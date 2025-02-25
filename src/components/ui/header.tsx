@@ -6,9 +6,10 @@ import Divider from './divider';
 import HeaderLink from './header-link';
 import AnimatedDropDown from './hover-animated-dropdown';
 import { Link } from 'react-router-dom';
-import MediumLink from './medium-button';
+import MediumLink from './menu-medium-link';
 import { ChevronDown } from 'lucide-react'
 import { motion } from 'framer-motion'
+import LargeLink from './menu-large-link';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function Header() {
     { label: 'Download App - Mac', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha27/Writeopia-alpha27.dmg' },
     { label: 'Download App - Mac (Intel)', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha27/Writeopia-alpha27-intel.dmg' },
     // { label: 'Sample', href: 'https://sample.writeopia.io/' },
-    { label: 'Guide', href: 'https://docs.writeopia.io/' },
+    { label: 'Documentation', href: 'https://docs.writeopia.io/' },
   ];
 
   const thirdItems = [
@@ -49,14 +50,14 @@ export default function Header() {
         <nav className="ml-auto pr-10 hidden md:flex items-center">
           <HeaderLink to="/">Home</HeaderLink>
           <AnimatedDropDown menuItems={secondItems} label="Product" />
-          <AnimatedDropDown menuItems={thirdItems} label="Comunity" />          
+          <AnimatedDropDown menuItems={thirdItems} label="Comunity" />                
         </nav>
         <div className={`z-40 ml-auto ${isOpen ? 'visible' : 'md:hidden'}  mr-6`}>
           <Hamburger toggled={isOpen} toggle={toggleMenu} size={20} />
         </div>                      
         <div className={`fixed inset-0 bg-gray-100 dark:bg-gray-900  z-30 pt-6 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
           <nav className="flex flex-col items-start gap-6 w-screen pt-28">
-            <LargeButton>Home</LargeButton>
+            <LargeLink to="/">Home</LargeLink>
             <Divider />        
             <LargeButton onClick={toggleProductScreen}>
               Product
@@ -93,11 +94,9 @@ export default function Header() {
                 <MediumLink to={item.href}>{item.label}</MediumLink>
               ))}              
             </div>
-            <Divider />    
+            <Divider />  
           </nav>
         </div>
       </header>
   );
 }
-
-

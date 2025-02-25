@@ -52,7 +52,7 @@ export default function Component() {
   )
 
   return (
-    <section className="w-full pb-12 md:pb-12 lg:pb-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-900">
+    <section className="w-full pt-48 pb-12 md:pb-12 pt-12 lg:pb-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-900">
       <div className="container px-4 md:px-6 mx-auto max-w-6xl">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Run anywhere, anytime</h2>
