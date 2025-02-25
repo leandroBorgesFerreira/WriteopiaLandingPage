@@ -1,36 +1,5 @@
 import React from 'react';
 
-const features = [
-  {
-    title: "Choose where you data goes.", 
-    description: "Your notes stay with you. Store them locally on your device for complete offline access, or sync with a cloud service of your choice—your data, your control.", 
-    align: "left",
-    imageUrlLight: "/choices.jpg",
-    imageUrlDark: "/choices.jpg"
-  },
-  {
-    title: "Choose your AI agent.", 
-    description: "You can choose from a variety of open-source AI agents to suit your needs. Run then locally for privacy.", 
-    align: "right",
-    imageUrlLight: "/choose_ai.png",
-    imageUrlDark: "/choose_ai.png"
-  },
-  { 
-    title: "No lock-in.", 
-    description: "We use public file formats and make it easy to export your data. No lock in to a specific system or service.", 
-    align: "left",
-    imageUrlLight: "/breakfree.jpg",
-    imageUrlDark: "/breakfree.jpg"
-  },
-  { title: "Beautifully designed.", 
-    description: "Our text editor is fast, responsive, and designed to keep up with you. With a sleek, modern interface, it’s both functional and visually appealing. Enjoy smooth, efficient note-taking every time.",
-    align: "right",
-    imageUrlLight: "/web_design.svg",
-    imageUrlDark: "/web_design.svg"
-  }
-];
-
-
 export default function Pitch() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen space-y-12 pt-24 p-6">    

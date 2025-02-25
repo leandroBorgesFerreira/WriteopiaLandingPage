@@ -1,7 +1,5 @@
 import React from 'react';
 import '../App.css';
-import DefaultLink from '../components/ui/default-link';
-import VariantLink from '../components/ui/variant-link';
 
 export default function Hero() {
   return (
