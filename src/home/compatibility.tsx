@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Suspense } from "react"
 import { Smartphone, Monitor, AppWindow, Bot, Laptop, ChevronsLeftRightEllipsis } from 'lucide-react';
 import { useTranslation } from "react-i18next";
 
@@ -54,18 +54,20 @@ export default function Component() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full pt-48 pb-12 md:pb-12 pt-12 lg:pb-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-900">
-      <div className="container px-4 md:px-6 mx-auto max-w-6xl">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">{t('compatibility_title')}</h2>
-          <p className="md:max-w-[700px] max-w-[400px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            {t('compatibility_subtitle')}
-          </p>
+    <Suspense fallback="loading">
+      <section className="w-full pt-48 pb-12 md:pb-12 pt-12 lg:pb-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-900">
+        <div className="container px-4 md:px-6 mx-auto max-w-6xl">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">{t('compatibility_title')}</h2>
+            <p className="md:max-w-[700px] max-w-[400px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              {t('compatibility_subtitle')}
+            </p>
+          </div>
+          <div className="grid gap-6 mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+            {platforms.map(renderPlatformCard)}
+          </div>
         </div>
-        <div className="grid gap-6 mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-          {platforms.map(renderPlatformCard)}
-        </div>
-      </div>
-    </section>
+      </section>
+    </Suspense>
   )
 }
