@@ -10,8 +10,12 @@ import MediumLink from './menu-medium-link';
 import { ChevronDown } from 'lucide-react'
 import { motion } from 'framer-motion'
 import LargeLink from './menu-large-link';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 export default function Header() {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -30,11 +34,12 @@ export default function Header() {
     setIsComunityOpen(!isComunityOpen);
   };
 
+  const docs = i18next.t("header_documentation")
+
   const secondItems = [
-    { label: 'Download App - Mac', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha27/Writeopia-alpha27.dmg' },
-    { label: 'Download App - Mac (Intel)', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha27/Writeopia-alpha27-intel.dmg' },
-    // { label: 'Sample', href: 'https://sample.writeopia.io/' },
-    { label: 'Documentation', href: 'https://docs.writeopia.io/' },
+    { label: 'Download - MacOS', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha27/Writeopia-alpha27.dmg' },
+    { label: 'Download - MacOS (Intel)', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha27/Writeopia-alpha27-intel.dmg' },
+    { label: docs, href: 'https://docs.writeopia.io/' },
   ];
 
   const thirdItems = [
@@ -49,8 +54,8 @@ export default function Header() {
         </Link>
         <nav className="ml-auto pr-10 hidden md:flex items-center">
           <HeaderLink to="/">Home</HeaderLink>
-          <AnimatedDropDown menuItems={secondItems} label="Product" />
-          <AnimatedDropDown menuItems={thirdItems} label="Comunity" />                
+          <AnimatedDropDown menuItems={secondItems} label={t('header_product')} />
+          <AnimatedDropDown menuItems={thirdItems} label={t('header_comunity')} />                
         </nav>
         <div className={`z-40 ml-auto ${isOpen ? 'visible' : 'md:hidden'}  mr-6`}>
           <Hamburger toggled={isOpen} toggle={toggleMenu} size={20} />
@@ -60,7 +65,7 @@ export default function Header() {
             <LargeLink to="/">Home</LargeLink>
             <Divider />        
             <LargeButton onClick={toggleProductScreen}>
-              Product
+              {t('header_product')}
               {
                 <motion.div
                   animate={{ rotate: !isProductOpen ? 0 : -180 }}
@@ -78,16 +83,16 @@ export default function Header() {
             </div>
             <Divider />        
             <LargeButton onClick={toggleComunityScreen}>
-              Comunity            
-                {
-                  <motion.div
-                    animate={{ rotate: !isComunityOpen ? 0 : -180 }}
-                    transition={{ duration: 0.150 }}
-                    className="ml-2 -mr-1 h-5 w-5 inline-flex items-center justify-center"
-                  >
-                    <ChevronDown className="h-5 w-5" aria-hidden="true" />
-                  </motion.div>
-                }
+              {t('header_comunity')}            
+              {
+                <motion.div
+                  animate={{ rotate: !isComunityOpen ? 0 : -180 }}
+                  transition={{ duration: 0.150 }}
+                  className="ml-2 -mr-1 h-5 w-5 inline-flex items-center justify-center"
+                >
+                  <ChevronDown className="h-5 w-5" aria-hidden="true" />
+                </motion.div>
+              }
               </LargeButton>
             <div className={`flex flex-col ${isComunityOpen ? 'visible' : 'hidden'}`}>
               {thirdItems.map((item) => (

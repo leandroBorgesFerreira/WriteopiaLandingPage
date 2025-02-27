@@ -9,5 +9,15 @@
   "pitch_no_lockin_title": "Não fazemos Lockin.",
   "pitch_no_lockin_subtitle": "Usamos formatos de arquivo publicos e tornamos o processo de exportar information simples. Não fique preso a um sistema específico.",
   "pitch_pretty_design_title": "Feito com carinho.",
-  "pitch_pretty_design_subtitle": "Nosso editor é rápido, responsivo and bem desenhado para a sua melhor experiência. Aproveite da melhor experiência ao construir suas idéias."
+  "pitch_pretty_design_subtitle": "Nosso editor é rápido, responsivo and bem desenhado para a sua melhor experiência. Aproveite da melhor experiência ao construir suas idéias.",
+  "compatibility_title": "Use em qualquer plataforma, sempre.",
+  "compatibility_subtitle": "Estamos criar nosso aplicativo para funcionar em todas as plataformas. Quer você esteja no computador, smartphone ou navegador você sempre terá uma ótima experiência.",
+  "newsletter_title": "Seja o primeira a saber",
+  "newsletter_subtitle": "Assine a nossa newsletter e seja o primero a saber de nossos novos lançamentos e novidades.",
+  "newsletter_subscribe": "Inscreva-se",
+  "footer_branch": "Todos direitos reservados.",
+  "footer_privacy": "Privacidade",
+  "header_product": "Produto",
+  "header_comunity": "Comunidade",
+  "header_documentation": "Documentação"
 }
