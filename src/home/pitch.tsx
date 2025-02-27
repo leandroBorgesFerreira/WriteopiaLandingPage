@@ -20,7 +20,7 @@ function DataChoice() {
       <div className="flex flex-col-reverse lg:flex-row items-center py-10">   
         <div className="p-6 px-10 items-center justify-center dark:text-gray-200 text-left max-w-4xl">
           <h2 className="text-4xl md:text-6xl font-bold">{t('pitch_data_choice_title')}</h2>
-          <p className="text-3xl mt-2 text-gray-500 dark:text-gray-400">{t('pitch_data_choice_subtitle')}</p>
+          <p className="text-2xl md:text-3xl mt-2 text-gray-500 dark:text-gray-400">{t('pitch_data_choice_subtitle')}</p>
         </div>     
         
         <div className='w-10'/>
@@ -43,7 +43,7 @@ function AiChoice() {
 
         <div className="p-6 px-10 items-center justify-center dark:text-gray-200 text-left max-w-4xl">
           <h2 className="text-4xl md:text-6xl font-bold">{t('pitch_ai_choice_title')}</h2>
-          <p className="text-3xl mt-2 text-gray-500 dark:text-gray-400">{t('pitch_ai_choice_subtitle')}</p>
+          <p className="text-2xl md:text-3xl mt-2 text-gray-500 dark:text-gray-400">{t('pitch_ai_choice_subtitle')}</p>
         </div>
       </div>
     </Suspense>
@@ -58,7 +58,7 @@ function OpenFormat() {
       <div className="flex flex-col-reverse lg:flex-row items-center py-10">   
         <div className="p-6 px-10 items-center justify-center dark:text-gray-200 text-left max-w-4xl">
           <h2 className="text-4xl md:text-6xl font-bold">{t('pitch_no_lockin_title')}</h2>
-          <p className="text-3xl mt-2 text-gray-500 dark:text-gray-400">{t('pitch_no_lockin_subtitle')}</p>
+          <p className="text-2xl md:text-3xl mt-2 text-gray-500 dark:text-gray-400">{t('pitch_no_lockin_subtitle')}</p>
         </div>     
         
         <div className='w-10'/>
@@ -81,7 +81,7 @@ function Design() {
 
         <div className="p-6 px-10 items-center justify-center dark:text-gray-200 text-left max-w-4xl">
           <h2 className="text-4xl md:text-6xl font-bold">{t('pitch_pretty_design_title')}</h2>
-          <p className="text-3xl mt-2 text-gray-500 dark:text-gray-400">{t('pitch_pretty_design_subtitle')}</p>
+          <p className="text-2xl md:text-3xl mt-2 text-gray-500 dark:text-gray-400">{t('pitch_pretty_design_subtitle')}</p>
         </div>
       </div>
     </Suspense>
