@@ -11,10 +11,8 @@ export default function Hero() {
         <p className='text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold dark:text-gray-200 tracking-tighter p-8'>{t('hero1')}<span className="highlight">{t('hero2')}</span></p>        
         <p className="max-w-[440px] text-gray-500 dark:text-gray-400 font-semibold text-xl pb-20">{t('subhero')}</p>
         
-        {/* <div className='w-full flex flex-col items-center pt-20'> */}
-          <img src="/hero_light.png" alt="Screenshot of Writeopia" className="responsive-image object-cover dark:hidden" />
-          <img src="/hero_dark.png" alt="Screenshot of Writeopia" className="responsive-image object-cover hidden dark:block" />
-        {/* </div> */}
+        {/* <img src="/hero_light.png" alt="Screenshot of Writeopia" className="responsive-image object-cover dark:hidden" />
+        <img src="/hero_dark.png" alt="Screenshot of Writeopia" className="responsive-image object-cover hidden dark:block" /> */}
       </div>
     </Suspense>
   );
