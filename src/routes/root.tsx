@@ -4,7 +4,7 @@ import Newsletter from "../home/newsletter";
 import Footer from "../components/ui/footer";
 import React from "react";
 import Pitch from "../home/pitch";
-import Hero from "@/home/hero";
+import Hero from "../home/hero";
 
 export default function Root() {
 	return (
