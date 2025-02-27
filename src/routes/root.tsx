@@ -11,8 +11,8 @@ export default function Root() {
 		<div>
 			<Header />
 			<Hero />
-			<Pitch />
-			<Compatibility />
+			{/* <Pitch /> */}
+			{/* <Compatibility /> */}
 			<Newsletter />
 			<Footer />
 		</div>
