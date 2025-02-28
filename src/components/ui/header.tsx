@@ -39,6 +39,7 @@ export default function Header() {
   const secondItems = [
     { label: 'Download - MacOS', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha28/Writeopia-alpha28.dmg' },
     { label: 'Download - MacOS (Intel)', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha28/Writeopia-alpha28-intel.dmg' },
+    { label: 'Download - Linux (.deb)', href: 'https://github.com/leandroBorgesFerreira/Writeopia/releases/download/app-macos-alpha28/Writeopia.deb' },
     { label: docs, href: 'https://docs.writeopia.io/' },
   ];
 
