@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
 
           Your privacy is critically important to us. At Writeopia we have the fundamental principles:<br/><br/>
           - Users have full control over their data and can choose not to send any information through the app at any time. If a feature requires data to function, the app will clearly inform the user about this need before any data is shared.<br/>
-          - The app will always support full offline usage.
+          - The app will always support full offline usage.<br/>
           - We don't share your personal information with anyone except to comply with the law or protect our rights.<br/>
           - We don't ask you for personal information unless we truly need it.<br/>
           - We don't store personal information on our servers unless required for the on-going operation of the service.<br/>
